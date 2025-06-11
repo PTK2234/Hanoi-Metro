@@ -10,18 +10,26 @@
   <div data-layer="Hanoimetro - 320px" class="Hanoimetro320px" style="width: 768px; height: 3403px; position: relative; background: white; overflow: hidden">
     <header>
       <!-- Header section grouped -->
-      <!-- Blue hamburger menu -->
-      <button class="hamburger-menu" style="width: 40px; height: 40px; position: absolute; top: 50px; left: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; background: transparent; border: none; cursor: pointer;">
-        <span style="display: block; width: 28px; height: 4px; background: #143F9A; border-radius: 2px; margin: 3px 0;"></span>
-        <span style="display: block; width: 28px; height: 4px; background: #143F9A; border-radius: 2px; margin: 3px 0;"></span>
-        <span style="display: block; width: 28px; height: 4px; background: #143F9A; border-radius: 2px; margin: 3px 0;"></span>
-      </button>
+<!-- Blue hamburger menu -->
+<button class="hamburger-menu" id="hamburgerBtn" style="width: 40px; height: 40px; position: absolute; top: 50px; left: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; background: transparent; border: none; cursor: pointer;">
+  <span style="display: block; width: 28px; height: 4px; background: #143F9A; border-radius: 2px; margin: 3px 0;"></span>
+  <span style="display: block; width: 28px; height: 4px; background: #143F9A; border-radius: 2px; margin: 3px 0;"></span>
+  <span style="display: block; width: 28px; height: 4px; background: #143F9A; border-radius: 2px; margin: 3px 0;"></span>
+</button>
+
+<!-- Dropdown navigation -->
+<div id="dropdownNav" style="display:none; position:absolute; top:95px; left:20px; background:white; border:1px solid #143F9A; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:20; min-width:180px;">
+  <a href="https://ptk2234.github.io/Hanoi-Metro/" style="display:block; padding:12px 20px; color:#143F9A; text-decoration:none; font-weight:600;">Trang chủ</a>
+  <a href="https://ptk2234.github.io/Hanoi-Metro-Map/" style="display:block; padding:12px 20px; color:#143F9A; text-decoration:none;">Bản đồ Metro</a>
+  <a href="#" style="display:block; padding:12px 20px; color:#143F9A; text-decoration:none;" onclick="alert('This function unavailable')">Giá vé</a> 
+  <a href="#" style="display:block; padding:12px 20px; color:#143F9A; text-decoration:none;" onclick="alert('This function unavailable')">Liên hệ</a>
+</div>
 
       <button class="vie-btn" style="width: 21px; height: 20px; left: 584.05px; top: 52.33px; position: absolute; background: transparent; border: none; color: #50B84D; font-size: 14px; font-family: ND Kern; font-weight: 700; cursor: pointer;" onclick="alert('This function unavailable')">VIE</button>
       <button class="en-btn" style="width: 20px; height: 20px; left: 619.05px; top: 52.33px; position: absolute; background: transparent; border: none; color: #143F9A; font-size: 14px; font-family: ND Kern; font-weight: 700; cursor: pointer;" onclick="alert('This function unavailable')">EN</button>
       <button class="search-btn" style="width: 42px; height: 20px; left: 686px; top: 52px; position: absolute; background: transparent; border: none; color: #143F9A; font-size: 14px; font-family: ND Kern; font-weight: 700; cursor: pointer;" onclick="alert('This function unavailable')">search</button>
       <button class="search-icon-btn" style="width: 14px; height: 14px; left: 668px; top: 51px; position: absolute; background: transparent; border: none; padding: 0; cursor: pointer;" onclick="alert('This function unavailable')">
-        <img src="asset/Home/Search.svg" alt="Search" style="width: 14px; height: 14px; position: absolute; left: 0; top: 5px;">
+        <img src="asset/Home/search.svg" alt="Search" style="width: 14px; height: 14px; position: absolute; left: 0; top: 5px;">
       </button>
 
       <button class="logo-btn" style="width: 46px; height: 45px; position: absolute; left: 376px; top: 33px; background: transparent; border: none; padding: 0; cursor: pointer;">
@@ -48,11 +56,12 @@
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.05);"></div>
       </div>
 
-      <div data-layer="Rectangle 23" class="Rectangle23" style="width: 254px; height: 106px; left: 28px; top: 810px; position: absolute; background: #2EC3E7; border-radius: 10px"></div>
-      <div style="position: absolute; left: 242px; top: 863px; width: 28px; height: 24px;">
-        <img src="asset/Home/Arrow.png" alt="Arrow" style="width: 100%; height: 100%; object-fit: contain;">
-      </div>
-      <div data-layer="Tra cứu tuyến tàu" class="TraCUTuyNTU" style="width: 142px; height: 52px; left: 44px; top: 830px; position: absolute; color: white; font-size: 28px; font-family: ND Kern; font-weight: 600; line-height: 30px; word-wrap: break-word">Tra cứu tuyến tàu</div>
+<button onclick="window.location.href='https://ptk2234.github.io/Hanoi-Metro-Map/'" style="position: absolute; left: 28px; top: 810px; width: 254px; height: 106px; background: #2EC3E7; border: none; border-radius: 10px; padding: 0; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+  <span style="color: white; font-size: 28px; font-family: 'ND Kern', sans-serif; font-weight: 600; line-height: 30px; margin-left: 16px;">
+    Tra cứu tuyến tàu
+  </span>
+  <img src="asset/Home/Arrow.png" alt="Arrow" style="width: 28px; height: 24px; margin-right: 16px; object-fit: contain;">
+</button>
       <!-- Metro card 1-->
       <div data-layer="Rectangle 6" class="Rectangle6" style="width: 352.24px; height: 439.20px; left: 28px; top: 963.47px; position: absolute; background: white; border-radius: 10px"></div>
       <div data-layer="Hạnh phúc được gửi theo mỗi chuyến tàu" class="HNhPhCCGITheoMIChuyNTU" style="width: 284.02px; height: 50.15px; left: 49.77px; top: 1219.21px; position: absolute; color: #143F9A; font-size: 20px; font-family: ND Kern; font-weight: 600; word-wrap: break-word">Hạnh phúc được gửi theo mỗi chuyến tàu</div>
@@ -67,7 +76,7 @@
       <div data-layer="14 tháng 5 năm 2024" class="ThNg5NM2024" style="width: 151px; height: 17px; left: 420px; top: 1345px; position: absolute; text-align: center; color: #143F9A; font-size: 14px; font-family: ND Kern; font-weight: 400; word-wrap: break-word">14 tháng 5 năm 2024</div>
       <!---->
       <div data-layer="Rectangle 9" class="Rectangle9" style="width: 247px; height: 185px; left: 35px; top: 1417px; position: absolute; background: #143F9A; border-radius: 10px"></div>
-      <div data-layer="Tìm kiếm trải nghiệm mới ở Hanoi Metro" class="TMKiMTrINghiMMIHanoiMetro" style="width: 164px; height: 133px; left: 61px; top: 1446px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 28px; font-family: ND Kern; font-weight: 600; word-wrap: break-word">Tìm kiếm trải nghiệm mới ở Hanoi Metro</div>
+      <div data-layer="Tím kiếm trải nghiệm mới ở Hanoi Metro" class="TMKiMTrINghiMMIHanoiMetro" style="width: 164px; height: 133px; left: 61px; top: 1446px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 28px; font-family: ND Kern; font-weight: 600; word-wrap: break-word">Tím kiếm trải nghiệm mới ở Hanoi Metro</div>
       <div style="position: absolute; left: 242px; top: 1552px; width: 24px; height: 21px;">
         <img src="asset/Home/Arrow.png" alt="Arrow" style="width: 100%; height: 100%; object-fit: contain;">
       </div>
@@ -162,5 +171,18 @@
 
     </footer>
   </div>
+
+<script>
+  const btn = document.getElementById('hamburgerBtn');
+  const nav = document.getElementById('dropdownNav');
+  document.addEventListener('click', function(e) {
+    if (btn.contains(e.target)) {
+      nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    } else if (!nav.contains(e.target)) {
+      nav.style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
